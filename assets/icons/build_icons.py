@@ -208,6 +208,142 @@ ICONS = {
         f'<circle cx="60" cy="44" r="10" fill="{BLUE}" {S}/>'),
 }
 
+
+def heart(cx, cy, k, color):
+    """Corazón centrado en (cx, cy); k = escala (1 ≈ 32 px de ancho)."""
+    pts = [(0, 14), (-10, 7), (-16, 1), (-16, -6), (-16, -12), (-11, -16), (-6, -16), (-2, -16), (0, -13), (0, -10),
+           (0, -13), (2, -16), (6, -16), (11, -16), (16, -12), (16, -6), (16, 1), (10, 7), (0, 14)]
+    q = [f"{cx + x * k:.1f} {cy + y * k:.1f}" for x, y in pts]
+    d = f"M{q[0]} " + " ".join(f"C{q[i]} {q[i + 1]} {q[i + 2]}" for i in range(1, 19, 3))
+    return f'<path d="{d} Z" fill="{color}" {S}/>'
+
+
+HAND = (f'<path d="M26 84 C36 76 50 74 62 78 H78 C86 78 86 89 78 89 H60 M78 87 L96 75 C104 70 111 78 105 84 '
+        f'L88 99 C80 105 72 107 60 107 H38 Z" fill="{WHITE}" {S}/>'
+        f'<path d="M6 90 L20 80 L34 102 L20 112 Z" fill="{BLUE}" {S}/>')
+
+EMOTIONS = {
+    "cercania": ("Cercanía", sparkle(18, 22) + sparkle(104, 100, 5) + rays(100, 22, -50, 2) +
+        heart(60, 62, 2.9, BLUE) + face(60, 52, 1.1)),
+    "tranquilidad": ("Tranquilidad", blob(86, 88, 20, MINT, 15) +
+        f'<path d="M42 40 q-7 -8 0 -15 t0 -15 M58 40 q-7 -8 0 -15 t0 -15" fill="none" stroke="{BLUE}" stroke-width="4.5" stroke-linecap="round"/>' +
+        f'<path d="M84 58 C102 58 102 84 84 84" fill="none" {S}/>' +
+        f'<path d="M24 48 H86 V74 C86 92 72 102 55 102 C38 102 24 92 24 74 Z" fill="{WHITE}" {S}/>' +
+        f'<path d="M12 108 H98" fill="none" {S}/>' + face(55, 70)),
+    "apoyo": ("Apoyo", rays(28, 30, 210) + rays(94, 26, -30) + heart(62, 46, 1.4, SUN) + HAND),
+    "celebracion": ("Celebración", sparkle(100, 100, 5) +
+        f'<path d="M16 106 L40 50 L72 82 Z" fill="{SUN}" {S}/>' +
+        f'<path d="M28 78 L48 92 M34 64 L60 84" fill="none" {S} stroke-width="3"/>' +
+        f'<path d="M60 40 q8 -10 2 -20 M80 56 q12 -2 18 -12 M70 30 q14 -6 10 -18" fill="none" stroke="{BLUE}" stroke-width="4.5" stroke-linecap="round"/>' +
+        f'<rect x="86" y="18" width="10" height="10" rx="2" fill="{MINT}" {S} stroke-width="3" transform="rotate(20 91 23)"/>' +
+        f'<rect x="96" y="66" width="10" height="10" rx="2" fill="{SKY}" {S} stroke-width="3" transform="rotate(-15 101 71)"/>' +
+        f'<circle cx="46" cy="22" r="5" fill="{SUN}" {S} stroke-width="3"/>' +
+        f'<circle cx="104" cy="44" r="4" fill="{BLUE}" {S} stroke-width="3"/>' + sparkle(62, 58, 5)),
+    "crecimiento": ("Crecimiento", blob(28, 40, 18, SKY, 16) + sparkle(100, 30, 5) +
+        f'<path d="M60 74 V40" fill="none" {S}/>' +
+        f'<path d="M60 58 C40 58 32 44 34 34 C50 34 60 42 60 58 Z" fill="{MINT}" {S}/>' +
+        f'<path d="M60 46 C78 46 86 32 84 22 C68 22 60 30 60 46 Z" fill="{MINT}" {S}/>' +
+        f'<path d="M38 80 H82 L76 108 H44 Z" fill="{BLUE}" {S}/>' +
+        f'<rect x="32" y="72" width="56" height="12" rx="4" fill="{BLUE}" {S}/>' + face(60, 92, 0.9)),
+    "optimismo": ("Optimismo",
+        rays(60, 56, -90, 1, 0, 32, 44) + rays(60, 56, 180, 1, 0, 32, 44) + rays(60, 56, 0, 1, 0, 32, 44) +
+        rays(60, 56, -135, 1, 0, 32, 42) + rays(60, 56, -45, 1, 0, 32, 42) + rays(60, 56, 135, 1, 0, 32, 40) +
+        f'<circle cx="60" cy="56" r="24" fill="{SUN}" {S}/>' + face(60, 52, 1.1) +
+        f'<path d="M66 100 C58 100 56 88 66 88 C68 78 84 78 86 86 C98 84 102 100 92 100 Z" fill="{WHITE}" {S}/>'),
+    "calma": ("Calma / descanso", blob(80, 82, 24, SKY, 17) + sparkle(92, 24, 6) + sparkle(104, 52, 4) + sparkle(28, 104, 4) +
+        f'<path d="M70 16 C44 20 28 42 30 66 C32 90 56 106 82 100 C62 94 52 76 52 58 C52 40 58 26 70 16 Z" fill="{SUN}" {S}/>' +
+        f'<path d="M38 60 q4 4 8 0" fill="none" {S} stroke-width="3.5"/>'),
+    "energia": ("Energía", blob(84, 86, 22, SKY, 18) + rays(28, 30, 210) + rays(96, 30, -40, 2) +
+        f'<path d="M68 12 L32 66 H58 L48 108 L90 50 H64 Z" fill="{SUN}" {S}/>'),
+    "metas": ("Metas", sparkle(20, 20, 5) + rays(96, 96, 45, 2) +
+        f'<circle cx="56" cy="64" r="38" fill="{WHITE}" {S}/>' +
+        f'<circle cx="56" cy="64" r="25" fill="{SKY}" {S}/>' +
+        f'<circle cx="56" cy="64" r="11" fill="{SUN}" {S}/>' +
+        f'<path d="M58 62 L100 20" fill="none" {S} stroke-width="5"/>' +
+        f'<path d="M94 14 L100 20 L94 30 M100 20 L110 14" fill="none" stroke="{BLUE}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>'),
+    "gracias": ("Gracias", sparkle(104, 18, 5) + rays(18, 26, 220, 2) +
+        f'<path d="M38 88 L28 106 L56 88" fill="{SKY}" {S}/>' +
+        f'<rect x="14" y="22" width="92" height="66" rx="24" fill="{SKY}" {S}/>' + heart(60, 56, 1.4, BLUE)),
+    "hola": ("¡Hola!",
+        f'<path d="M22 40 q-8 14 0 28 M12 34 q-12 20 0 40 M98 30 q8 12 2 26" fill="none" stroke="{BLUE}" stroke-width="4.5" stroke-linecap="round"/>' +
+        f'<g transform="rotate(-14 60 64)">' +
+        "".join(f'<rect x="{x}" y="{y}" width="12" height="40" rx="6" fill="{WHITE}" {S}/>' for x, y in ((40, 22), (52, 16), (64, 18), (76, 26))) +
+        f'<path d="M40 70 L26 56 C21 51 27 43 33 47 L46 60" fill="{WHITE}" {S}/>' +
+        f'<rect x="38" y="48" width="50" height="48" rx="18" fill="{WHITE}" {S}/>' +
+        f'<rect x="46" y="94" width="34" height="16" rx="4" fill="{SUN}" {S}/></g>'),
+    "comunidad": ("Comunidad", heart(60, 18, 0.7, SUN) +
+        f'<path d="M4 108 C4 88 40 88 40 108" fill="{MINT}" {S}/>' +
+        f'<path d="M80 108 C80 88 116 88 116 108" fill="{SUN}" {S}/>' +
+        f'<circle cx="22" cy="76" r="11" fill="{WHITE}" {S}/><circle cx="98" cy="76" r="11" fill="{WHITE}" {S}/>' +
+        f'<path d="M36 112 C36 84 84 84 84 112" fill="{BLUE}" {S}/>' +
+        f'<circle cx="60" cy="62" r="14" fill="{WHITE}" {S}/>' +
+        f'<path d="M17 79 q5 5 10 0 M93 79 q5 5 10 0 M54 65 q6 6 12 0" fill="none" {S} stroke-width="3"/>'),
+    "bien-hecho": ("¡Bien hecho!", blob(88, 82, 20, MINT, 19) + sparkle(26, 22, 6) + rays(92, 24, -40) +
+        f'<path d="M48 58 L52 28 C53 18 68 18 66 32 L62 58" fill="{WHITE}" {S}/>' +
+        f'<rect x="40" y="56" width="42" height="46" rx="9" fill="{WHITE}" {S}/>' +
+        f'<path d="M48 70 H78 M48 81 H78 M48 92 H76" fill="none" {S} stroke-width="3.5"/>' +
+        f'<rect x="20" y="54" width="20" height="52" rx="5" fill="{BLUE}" {S}/>'),
+    "sorpresa": ("Sorpresa", sparkle(18, 30, 5) + sparkle(104, 26, 6) + rays(100, 60, 0, 2) +
+        f'<path d="M60 40 C40 14 26 34 60 40 C94 34 80 14 60 40" fill="{SKY}" {S}/>' +
+        f'<rect x="22" y="54" width="76" height="50" rx="4" fill="{SUN}" {S}/>' +
+        f'<rect x="16" y="40" width="88" height="16" rx="4" fill="{SUN}" {S}/>' +
+        f'<rect x="54" y="40" width="12" height="64" fill="{BLUE}" {S}/>'),
+    "hogar": ("Hogar / confianza", blob(90, 92, 18, MINT, 20) + rays(98, 26, -40, 2) +
+        f'<rect x="28" y="54" width="64" height="50" rx="4" fill="{WHITE}" {S}/>' +
+        f'<path d="M14 60 L60 20 L106 60" fill="none" {S} stroke-width="6"/>' +
+        f'<path d="M20 56 L60 22 L100 56 Z" fill="{BLUE}" {S}/>' + heart(60, 78, 0.9, SUN)),
+    "destacado": ("Destacado", blob(30, 92, 18, SKY, 21) + sparkle(102, 22, 6) + sparkle(18, 30, 4) +
+        f'<path d="M60 12 L72 40 L104 42 L80 62 L88 94 L60 78 L32 94 L40 62 L16 42 L48 40 Z" fill="{SUN}" {S}/>' + face(60, 54, 0.9)),
+    "tu-tiempo": ("Tu tiempo", blob(88, 88, 20, SUN, 22) + rays(24, 22, 225, 2) + rays(96, 22, -45, 2) +
+        f'<circle cx="60" cy="62" r="38" fill="{WHITE}" {S}/>' +
+        f'<path d="M60 32 v4 M90 62 h-4 M60 92 v-4 M30 62 h4" fill="none" {S}/>' +
+        f'<path d="M60 62 V42 M60 62 L76 72" fill="none" stroke="{BLUE}" stroke-width="5" stroke-linecap="round"/>' +
+        f'<circle cx="60" cy="62" r="4" fill="{INK}"/>'),
+    "fiesta": ("Fiesta / aniversario", sparkle(24, 28, 5) + sparkle(104, 76, 4) +
+        f'<path d="M80 66 q8 12 0 22 t2 24" fill="none" {S} stroke-width="3"/>' +
+        f'<ellipse cx="80" cy="40" rx="20" ry="24" fill="{SUN}" {S}/>' +
+        f'<path d="M54 76 q-8 12 0 22 t-2 14" fill="none" {S} stroke-width="3"/>' +
+        f'<ellipse cx="54" cy="48" rx="24" ry="28" fill="{BLUE}" {S}/>' +
+        f'<path d="M50 76 L58 76 L54 70 Z" fill="{BLUE}" {S} stroke-width="3"/>' +
+        f'<path d="M42 34 q4 -8 12 -8" fill="none" stroke="{WHITE}" stroke-width="4" stroke-linecap="round"/>'),
+    "aprender": ("Aprender", sparkle(60, 14, 6) + rays(32, 18, 230, 2) + rays(88, 18, -50, 2) +
+        f'<path d="M60 36 C48 28 30 28 14 32 V98 C30 94 48 94 60 102 C72 94 90 94 106 98 V32 C90 28 72 28 60 36 Z" fill="{WHITE}" {S}/>' +
+        f'<path d="M60 36 V102" fill="none" {S}/>' +
+        f'<path d="M24 48 C34 46 42 46 50 50 M24 62 C34 60 42 60 50 64 M70 50 C78 46 86 46 96 48 M70 64 C78 60 86 60 96 62" fill="none" stroke="{BLUE}" stroke-width="4" stroke-linecap="round"/>'),
+    "orientacion": ("Orientación", blob(86, 88, 20, MINT, 23) + sparkle(102, 22, 5) +
+        f'<circle cx="60" cy="60" r="40" fill="{WHITE}" {S}/>' +
+        f'<path d="M60 26 v6 M94 60 h-6 M60 94 v-6 M26 60 h6" fill="none" {S}/>' +
+        f'<path d="M60 60 L76 38 L68 66 Z" fill="{SUN}" {S} stroke-width="3.5"/>' +
+        f'<path d="M60 60 L44 82 L52 54 Z" fill="{BLUE}" {S} stroke-width="3.5"/>' +
+        f'<circle cx="60" cy="60" r="4" fill="{WHITE}" {S} stroke-width="3"/>'),
+    "superacion": ("Superación", sparkle(22, 24, 5) + sparkle(98, 30, 4) +
+        f'<path d="M6 104 L44 46 L60 68 L74 40 L114 104 Z" fill="{SKY}" {S}/>' +
+        f'<path d="M64 52 L74 40 L84 56 L76 52 L70 58 Z" fill="{WHITE}" {S} stroke-width="3"/>' +
+        f'<path d="M74 40 V12" fill="none" {S}/>' +
+        f'<path d="M74 12 H96 L90 19 L96 26 H74 Z" fill="{SUN}" {S}/>' +
+        f'<path d="M24 104 L44 74 L54 88" fill="none" stroke="{MINT}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>'),
+    "te-cuidamos": ("Te cuidamos", blob(84, 84, 22, SUN, 24) + rays(26, 22, 225) +
+        f'<path d="M60 14 C48 22 36 24 24 24 V58 C24 82 42 98 60 106 C78 98 96 82 96 58 V24 C84 24 72 22 60 14 Z" fill="{WHITE}" {S}/>' +
+        heart(60, 58, 1.2, BLUE)),
+    "buenas-noticias": ("Buenas noticias", sparkle(60, 16, 5) +
+        f'<path d="M14 88 A46 46 0 0 1 106 88" fill="none" stroke="{BLUE}" stroke-width="10" stroke-linecap="round"/>' +
+        f'<path d="M28 88 A32 32 0 0 1 92 88" fill="none" stroke="{SUN}" stroke-width="10" stroke-linecap="round"/>' +
+        f'<path d="M42 88 A18 18 0 0 1 78 88" fill="none" stroke="{MINT}" stroke-width="10" stroke-linecap="round"/>' +
+        f'<path d="M6 104 C0 104 0 90 10 92 C12 82 28 84 28 92 C36 92 36 104 28 104 Z" fill="{WHITE}" {S}/>' +
+        f'<path d="M92 104 C86 104 86 90 96 92 C98 82 114 84 114 92 C120 92 120 104 112 104 Z" fill="{WHITE}" {S}/>'),
+    "felicidad": ("Felicidad", blob(90, 90, 18, SKY, 25) + rays(22, 24, 225) + sparkle(102, 22, 6) +
+        f'<circle cx="60" cy="60" r="38" fill="{SUN}" {S}/>' +
+        f'<path d="M44 52 q4 -6 8 0 M70 50 h10" fill="none" {S}/>' +
+        f'<path d="M42 68 C46 88 74 88 78 68 Z" fill="{WHITE}" {S}/>' +
+        f'<circle cx="38" cy="66" r="5" fill="{BLUE}" opacity=".35"/><circle cx="84" cy="64" r="5" fill="{BLUE}" opacity=".35"/>'),
+}
+
+GROUPS = [
+    ("Regulación y producto", "Para las secciones del newsletter y la plataforma.", ICONS),
+    ("Emociones y cercanía", "Generales, para conectar con las personas: celebrar, agradecer, acompañar.", EMOTIONS),
+]
+ALL_ICONS = {**ICONS, **EMOTIONS}
+
 FILTER = ('<defs><filter id="hand" x="-5%" y="-5%" width="110%" height="110%">'
           '<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4"/>'
           '<feDisplacementMap in="SourceGraphic" scale="2.6"/></filter></defs>')
@@ -232,12 +368,14 @@ def svg(body):
 
 def main():
     (OUT / "svg").mkdir(exist_ok=True)
-    for slug, (_, body) in ICONS.items():
+    for slug, (_, body) in ALL_ICONS.items():
         (OUT / "svg" / f"{slug}.svg").write_text(svg(body))
 
     cards = "".join(
-        f'<figure><img src="svg/{slug}.svg" alt="{name}"><figcaption>{name}<span>{slug}</span></figcaption></figure>'
-        for slug, (name, _) in ICONS.items())
+        f'<h2>{title}<small>{desc}</small></h2>' + "".join(
+            f'<figure><img src="svg/{slug}.svg" alt="{name}"><figcaption>{name}<span>{slug}</span></figcaption></figure>'
+            for slug, (name, _) in icons.items())
+        for title, desc, icons in GROUPS)
     (OUT / "index.html").write_text(PAGE.replace("{{cards}}", cards))
 
     try:
@@ -250,7 +388,7 @@ def main():
         exe = os.environ.get("CHROMIUM_PATH")
         browser = p.chromium.launch(executable_path=exe) if exe else p.chromium.launch()
         page = browser.new_page(viewport={"width": 256, "height": 256})
-        for slug in ICONS:
+        for slug in ALL_ICONS:
             page.set_content(f'<html><body style="margin:0;background:transparent">'
                              f'<img src="data:image/svg+xml;base64,{base64.b64encode((OUT / "svg" / f"{slug}.svg").read_bytes()).decode()}" '
                              f'width="256" height="256" style="display:block"></body></html>')
@@ -275,6 +413,8 @@ PAGE = """<!doctype html>
   .palette i { width:22px; height:22px; border-radius:50%; border:2px solid var(--ink); }
   main { max-width:1100px; margin:0 auto; padding:24px; display:grid; gap:18px;
          grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); }
+  h2 { grid-column:1/-1; margin:18px 0 0; font-size:20px; }
+  h2 small { display:block; font-size:13px; font-weight:400; color:#5a6b7d; margin-top:4px; }
   figure { margin:0; background:#fff; border-radius:18px; padding:18px 10px 14px; text-align:center;
            box-shadow:0 2px 10px rgba(10,35,66,.06); }
   img { width:96px; height:96px; }

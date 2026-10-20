@@ -22,13 +22,15 @@ Ambas son HTML de email (tablas, estilos en línea, 600 px, responsivas y compat
 
 ## Iconografía
 
-Set de 24 iconos en estilo dibujado a mano, cercano y amigable, con la paleta Regcheq (trazo `#0A2342` + manchas `#368FFF`, `#BCD9FF`, `#F4C542`, `#7FD8AA`). Vista previa en [`assets/icons/index.html`](assets/icons/index.html) / [`assets/icons/preview.png`](assets/icons/preview.png).
+Dos sets de 24 iconos cada uno —**Regulación y producto** y **Emociones y cercanía**— en estilo dibujado a mano, cercano y amigable, con la paleta Regcheq (trazo `#0A2342` + manchas `#368FFF`, `#BCD9FF`, `#F4C542`, `#7FD8AA`). Vista previa en [`assets/icons/index.html`](assets/icons/index.html) / [`assets/icons/preview.png`](assets/icons/preview.png).
 
 - `assets/icons/svg/` — vectoriales (web, diseño).
 - `assets/icons/png/` — 256 × 256 con fondo transparente, para el email (Gmail y Outlook no muestran SVG). Usar a 48–64 px.
 - Para editar o agregar iconos: modificar `assets/icons/build_icons.py` y ejecutar `CHROMIUM_PATH=/ruta/a/chromium python3 assets/icons/build_icons.py` (los PNG requieren Playwright).
 
-Sugerencia por sección: 01 `alertas` / `regulacion` · 02 `en-la-practica` · 03 `blog` · 04 `webinar` · 05 `novedades` / `lanzamiento` · 06 `hablemos` · Fechas clave `fechas-clave` · 💡 `tip`.
+Sugerencia por sección: saludo `hola` · 01 `alertas` / `regulacion` · 02 `en-la-practica` · 03 `blog` · 04 `webinar` · 05 `novedades` / `lanzamiento` · 06 `hablemos` · Fechas clave `fechas-clave` · 💡 `tip`.
+
+El set de emociones (`cercania`, `gracias`, `celebracion`, `apoyo`, `te-cuidamos`, `felicidad`, etc.) sirve para saludos, agradecimientos, aniversarios, logros de clientes y mensajes de marca.
 
 ## Estructura fija de cada edición
 

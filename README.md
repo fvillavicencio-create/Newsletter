@@ -82,24 +82,27 @@ Si la novedad no exige ni cambia nada para el cliente, no amerita comunicado: va
 
 ## Flujo de producción del newsletter
 
+Ciclo de 10 días hábiles con envío un martes sí y uno no, a las 9:00. El detalle por día, los roles, el banco de contenidos y el calendario están en el **[plan de trabajo](docs/plan-de-trabajo.md)**.
+
 | Día | Tarea | Responsable |
 |---|---|---|
-| D-10 | Definir temas de la edición (01–05) y CTA de cierre | Marketing + Cumplimiento |
-| D-7 | Redacción de las secciones 01–04 | Marketing |
-| D-5 | Validación regulatoria de 01 y 02 | Cumplimiento |
-| D-4 | Secciones 05–06 con Producto, CX y Comercial | Marketing |
-| D-2 | Montaje en herramienta de envío, pruebas en Gmail / Outlook / móvil | Marketing |
-| D-0 | Envío a toda la base (sugerido: martes o miércoles, 9:00–10:00) | Marketing |
-| D+3 | Revisión de métricas | Marketing |
+| D-9 (mié) | Planeación: temas 01–05, tema central y CTA de cierre | Marketing + Cumplimiento + Producto |
+| D-6 (lun) | Borrador 01–04 e insumos de 05 recibidos | Marketing |
+| D-5 (mar) | Validación regulatoria de 01 y 02 | Cumplimiento |
+| D-4 (mié) | Validación de 05 y **texto congelado** | Marketing + Producto + Comercial |
+| D-3 / D-2 | Montaje en HubSpot, pruebas y go / no-go | Marketing |
+| **D-0 (mar)** | **Envío a toda la base, 9:00** | Marketing |
+| D+3 (vie) | Revisión de métricas | Marketing |
 
-## Calendario editorial sugerido (primeras ediciones)
+## Calendario de las primeras ediciones
 
-| Edición | Fecha | Tema central (02 · En la práctica) | Cierre sugerido |
+| Edición | Envío | Tema central (02 · En la práctica) | Cierre sugerido |
 |---|---|---|---|
-| N.º 01 | 2.ª quincena oct | Beneficiario controlador | Demo |
-| N.º 02 | 1.ª quincena nov | Integración de expedientes de identificación | Webinar |
-| N.º 03 | 2.ª quincena nov | Avisos e informes en ceros | Blog / recurso |
-| N.º 04 | 1.ª quincena dic | Cierre de año: checklist de cumplimiento | Demo |
+| N.º 01 | Mar 3 nov | Beneficiario controlador | Demo |
+| N.º 02 | Mar 17 nov | Integración de expedientes de identificación | Webinar |
+| N.º 03 | Mar 1 dic | Avisos e informes en ceros | Blog / recurso |
+| N.º 04 | Mar 15 dic | Cierre de año: checklist de cumplimiento | Demo |
+| N.º 05 | Mar 12 ene | Por definir | Webinar |
 
 *No todas las ediciones necesitan vender directamente:* alternar el cierre entre demo, webinar y contenido.
 

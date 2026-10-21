@@ -33,6 +33,33 @@ Ya no hay versiones del newsletter por audiencia. Lo que antes era exclusivo de 
 
 Ambas son HTML de email (tablas, estilos en línea, 600 px, responsivas y compatibles con Outlook), listas para pegar en HubSpot u otra herramienta de envío. Todo texto entre `[corchetes]` es un marcador que se reemplaza en cada envío.
 
+## Elementos visuales (doodles)
+
+Los doodles están en [`assets/doodles/`](assets/doodles/): 47 ilustraciones PNG de 256 × 256 px, con fondo transparente y en la paleta de la marca. Vienen de la carpeta "Doodles" del Drive de Marketing, en dos familias: *regulación y producto* y *emociones y cercanía*.
+
+**Reglas de uso**
+
+- Un doodle por sección como máximo, alineado a la derecha del título, a 64 px.
+- Sobre fondos oscuros (azul marino), el doodle va dentro de un círculo blanco de 44 px.
+- Junto a un texto (descargables, "En tu plataforma") se usa a 22 px, en lugar del emoji.
+- Siempre se muestran a la mitad o menos de su tamaño real, para que se vean nítidos en pantallas retina.
+
+**Asignación fija**
+
+| Bloque | Doodle |
+|---|---|
+| Saludo | `hola` |
+| 01 · Lo que tienes que saber | `regulacion` |
+| Fechas clave | `fechas-clave` |
+| 02 · En la práctica | `en-la-practica` · descargable: `descargable` |
+| 03 · Lo nuevo en nuestro blog | `blog` |
+| 04 · Próximamente en Regcheq | `webinar` |
+| 05 · Novedades Regcheq | `novedades` · lanzamientos: `lanzamiento` |
+| 06 · Hablemos | `hablemos` |
+| Comunicado: Qué cambia / Qué tienes que hacer / En tu plataforma / Dudas | `novedades` / `checklist` / `plataforma` / `apoyo` |
+
+**Por tema (para ediciones especiales o temas centrales):** `beneficiario-controlador`, `identificacion`, `listas-restrictivas`, `monitoreo`, `alertas`, `revision-documental`, `proteccion-datos`, `cumplimiento`, `institucion`. Para eventos y agradecimientos: `celebracion`, `fiesta`, `gracias`, `comunidad`, `logro`.
+
 ## Newsletter general: estructura fija de cada edición
 
 La estructura se repite en todas las ediciones para que sea reconocible; lo que cambia es el contenido.

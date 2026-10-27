@@ -33,6 +33,20 @@ Ya no hay versiones del newsletter por audiencia. Lo que antes era exclusivo de 
 
 Ambas son HTML de email (tablas, estilos en línea, 600 px, responsivas y compatibles con Outlook), listas para pegar en HubSpot u otra herramienta de envío. Todo texto entre `[corchetes]` es un marcador que se reemplaza en cada envío.
 
+## Paleta de color
+
+Orden de color de todas las piezas (opción "Azul Regcheq"):
+
+| Elemento | Color |
+|---|---|
+| Cabecera | Azul Regcheq `#1478c8` con logo blanco y franja amarilla `#f4c542` |
+| Títulos y texto destacado | Azul marino `#0a2342` |
+| Etiquetas de sección y enlaces | Azul Regcheq `#1478c8` |
+| Cajas destacadas (Fechas clave, Qué tienes que hacer, bloques especiales) | Amarillo suave `#fdf4d8` con texto azul marino |
+| Cajas de apoyo (índice, checklist, datos clave) | Gris azulado `#f3f7fb` |
+| Cierre · 06 Hablemos | Azul marino `#0a2342` con botón amarillo `#f4c542` |
+| Firma | Azul marino `#0a2342` |
+
 ## Elementos visuales (doodles)
 
 Los doodles están en [`assets/doodles/`](assets/doodles/): 47 ilustraciones PNG de 256 × 256 px, con fondo transparente y en la paleta de la marca. Vienen de la carpeta "Doodles" del Drive de Marketing, en dos familias: *regulación y producto* y *emociones y cercanía*.
@@ -40,7 +54,7 @@ Los doodles están en [`assets/doodles/`](assets/doodles/): 47 ilustraciones PNG
 **Reglas de uso**
 
 - Un doodle por sección como máximo, alineado a la derecha del título, a 64 px.
-- Sobre fondos oscuros (azul marino), el doodle va dentro de un círculo blanco de 44 px.
+- Sobre fondos de color (cajas destacadas), el doodle va dentro de un círculo blanco de 44 px.
 - Junto a un texto (descargables, "En tu plataforma") se usa a 22 px, en lugar del emoji.
 - Siempre se muestran a la mitad o menos de su tamaño real, para que se vean nítidos en pantallas retina.
 

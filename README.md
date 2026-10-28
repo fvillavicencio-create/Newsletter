@@ -39,7 +39,7 @@ Orden de color de todas las piezas (opción "Azul Regcheq"):
 
 | Elemento | Color |
 |---|---|
-| Cabecera | Azul Regcheq `#1478c8` con logo blanco y franja amarilla `#f4c542` |
+| Cabecera | Imagen de fondo degradada (`assets/header-fondo.png`, 600 × 212 px) con respaldo azul Regcheq `#1478c8`, logo blanco y franja amarilla `#f4c542` |
 | Títulos y texto destacado | Azul marino `#0a2342` |
 | Etiquetas de sección y enlaces | Azul Regcheq `#1478c8` |
 | Cajas destacadas (Fechas clave, Qué tienes que hacer, bloques especiales) | Amarillo suave `#fdf4d8` con texto azul marino |

@@ -139,11 +139,13 @@ Ciclo de 10 días hábiles con envío un martes sí y uno no, a las 9:00. El det
 
 | Edición | Envío | Tema central (02 · En la práctica) | Cierre sugerido |
 |---|---|---|---|
-| N.º 01 | Mar 3 nov | Beneficiario controlador | Demo |
-| N.º 02 | Mar 17 nov | Integración de expedientes de identificación | Webinar |
+| N.º 01 | Mar 3 nov *(por confirmar)* | Lo que cambia el 30 de noviembre | Demo |
+| N.º 02 | Mar 17 nov | Beneficiario controlador con el umbral del 25 % | Webinar |
 | N.º 03 | Mar 1 dic | Avisos e informes en ceros | Blog / recurso |
-| N.º 04 | Mar 15 dic | Cierre de año: checklist de cumplimiento | Demo |
-| N.º 05 | Mar 12 ene | Por definir | Webinar |
+| N.º 04 | Mar 15 dic | Cierre de año: checklist y plan de capacitación anual | Demo |
+| N.º 05 | Mar 12 ene | Enfoque basado en riesgos | Webinar |
+
+Calendario completo hasta el 1 de marzo de 2027, criterios de selección y brief de edición: **[cómo se define el contenido](docs/definicion-de-contenido.md)**.
 
 *No todas las ediciones necesitan vender directamente:* alternar el cierre entre demo, webinar y contenido.
 

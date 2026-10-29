@@ -68,14 +68,16 @@ Para que el ciclo de 10 días sea viable, algunos contenidos se preparan **con u
 
 ## 7. Calendario de las primeras ediciones
 
+Los temas siguen la línea editorial "Ruta al 1 de marzo". Los criterios para elegir el contenido, el banco de contenidos y el brief de edición están en [cómo se define el contenido](definicion-de-contenido.md).
+
 | Edición | Planeación (D-9) | Texto congelado (D-4) | Envío (D-0) | Tema central (02) | Cierre |
 |---|---|---|---|---|---|
-| N.º 01 | Mié 21 oct | Mié 28 oct | **Mar 3 nov** | Beneficiario controlador | Demo |
-| N.º 02 | Mié 4 nov | Mié 11 nov | **Mar 17 nov** | Integración de expedientes de identificación | Webinar |
+| N.º 01 | Mié 21 oct | Mié 28 oct | **Mar 3 nov** | Lo que cambia el 30 de noviembre *(por confirmar)* | Demo |
+| N.º 02 | Mié 4 nov | Mié 11 nov | **Mar 17 nov** | Beneficiario controlador con el umbral del 25 % | Webinar |
 | N.º 03 | Mié 18 nov | Mié 25 nov | **Mar 1 dic** | Avisos e informes en ceros | Blog / recurso |
-| N.º 04 | Mié 2 dic | Mié 9 dic | **Mar 15 dic** | Cierre de año: checklist de cumplimiento | Demo |
+| N.º 04 | Mié 2 dic | Mié 9 dic | **Mar 15 dic** | Cierre de año: checklist y plan de capacitación anual | Demo |
 | — | — | — | *29 dic: pausa por fiestas* | — | — |
-| N.º 05 | Mié 30 dic\* | Mié 6 ene | **Mar 12 ene** | *Por definir en la planeación de N.º 03* | Webinar |
+| N.º 05 | Mié 30 dic\* | Mié 6 ene | **Mar 12 ene** | Enfoque basado en riesgos | Webinar |
 
 Notas:
 - **Lun 16 nov** es feriado (Revolución Mexicana) y es el D-1 de N.º 02: el envío se programa el viernes 13.

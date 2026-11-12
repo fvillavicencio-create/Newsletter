@@ -4,6 +4,8 @@ Sistema para planear, recabar, producir y enviar el newsletter cada dos semanas,
 
 ## 1. El sistema en una línea
 
+Resumen visual para compartir con las áreas: [infografía del ciclo](infografia-ciclo.png) ([PDF](infografia-ciclo.pdf)).
+
 **Las áreas cargan sus insumos en un solo formulario → Marketing planea con un brief → se produce sobre la plantilla → Cumplimiento y Producto validan → se envía el martes → se mide el viernes.** Las fechas no cambian de un ciclo a otro, así que cada área sabe qué día le toca sin que nadie se lo pida.
 
 ## 2. Cadencia

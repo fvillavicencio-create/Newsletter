@@ -72,16 +72,14 @@ Cada área tiene una cuota mínima por quincena: **CX** deja 2 dudas frecuentes,
 
 | Envío | Tema central (02) | Por qué en esa fecha | Cierre (06) |
 |---|---|---|---|
-| Mar 3 nov\* | Lo que cambia el 30 de noviembre: notificaciones electrónicas diarias y avisos por sospecha en 24 horas | Son las obligaciones operativas que arrancan con la entrada en vigor | Demo |
-| Mar 17 nov | Beneficiario controlador con el umbral del 25 % | Es la obligación que más dudas genera y exige revisar expedientes existentes | Webinar |
-| Mar 1 dic | Avisos e informes en ceros | El 17 de diciembre vencen los avisos de noviembre | Blog / recurso |
-| Mar 15 dic | Cierre de año: checklist de cumplimiento y plan de capacitación anual | Planear 2027 antes de las fiestas | Demo |
-| Mar 12 ene | Enfoque basado en riesgos: cómo clasificar a tus clientes | Arranca el trimestre previo al 1 de marzo | Webinar |
-| Mar 26 ene | Manual de políticas internas: qué debe incluir | Debe estar actualizado antes del 1 de marzo | Blog / recurso |
-| Mar 9 feb | Conocimiento del cliente: integración y actualización de expedientes | Obligación exigible desde el 1 de marzo | Demo |
+| Mar 1 dic | Ya están vigentes las nuevas Reglas: notificaciones electrónicas diarias y avisos por sospecha en 24 horas | Son las obligaciones operativas que arrancan el 30 de noviembre | Demo |
+| Mar 15 dic | Cierre de año: checklist de cumplimiento y plan de capacitación anual | Planear 2027 antes de las fiestas | Contenido |
+| Mar 12 ene | Beneficiario controlador con el umbral del 25 % | Es la obligación que más dudas genera y exige revisar expedientes existentes | Webinar |
+| Mar 26 ene | Enfoque basado en riesgos: cómo clasificar a tus clientes | Debe estar operando antes del 1 de marzo | Demo |
+| Mar 9 feb | Manual de políticas internas y conocimiento del cliente | Ambos son exigibles desde el 1 de marzo | Contenido |
 | Mar 23 feb | Checklist final antes del 1 de marzo | Última edición antes de la fecha | Demo |
 
-\*La edición del 3 de noviembre está por confirmar (ver la nota al final del documento).
+Los avisos mensuales (día 17) y los informes en ceros se recuerdan en cada edición dentro de *Fechas clave*.
 
 Después del 1 de marzo, la siguiente línea editorial se define en la retrospectiva de febrero. Puede ser auditoría anual, PEP o la certificación de la UIF 2027.
 
@@ -128,9 +126,6 @@ Pendientes y responsables: ____________________________________
 
 El barrido se puede programar para que corra solo cada dos semanas.
 
-## Nota: primera edición regular
+## Nota: primera edición con el sistema completo
 
-La edición especial salió el 23 de octubre con las novedades regulatorias y un checklist. Una edición regular el 3 de noviembre llegaría a los 11 días y con el ciclo de producción ya vencido. Hay dos opciones:
-
-1. **Mantener el 3 de noviembre** con un ciclo comprimido. Tiene sentido si se quiere avisar de los cambios del 30 de noviembre con más anticipación.
-2. **Arrancar el 17 de noviembre (recomendado)**, con el ciclo completo y la planeación el miércoles 4 de noviembre. El tema del 3 de noviembre se fusiona con el del 17.
+La edición especial salió el 23 de octubre. El sistema completo arranca con la edición del **1 de diciembre**, con planeación el **miércoles 18 de noviembre**. El calendario operativo con todas las fechas de cada fase está en el [plan de trabajo](plan-de-trabajo.md#8-calendario-hasta-el-1-de-marzo).

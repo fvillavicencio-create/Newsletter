@@ -123,29 +123,31 @@ Si la novedad no exige ni cambia nada para el cliente, no amerita comunicado: va
 
 ## Flujo de producción del newsletter
 
-Ciclo de 10 días hábiles con envío un martes sí y uno no, a las 9:00. El detalle por día, los roles, el banco de contenidos y el calendario están en el **[plan de trabajo](docs/plan-de-trabajo.md)**.
+Ciclo de 10 días hábiles en cinco fases (planeación, recabación, producción, validación, y envío y medición), con envío martes de por medio a las 9:00. El **[plan de trabajo](docs/plan-de-trabajo.md)** detalla qué entrega cada área para cada sección, las herramientas, las reglas y los checklists.
 
 | Día | Tarea | Responsable |
 |---|---|---|
-| D-9 (mié) | Planeación: temas 01–05, tema central y CTA de cierre | Marketing + Cumplimiento + Producto |
-| D-6 (lun) | Borrador 01–04 e insumos de 05 recibidos | Marketing |
-| D-5 (mar) | Validación regulatoria de 01 y 02 | Cumplimiento |
-| D-4 (mié) | Validación de 05 y **texto congelado** | Marketing + Producto + Comercial |
+| D-10 (mar) | Barrido de novedades regulatorias y propuesta de brief | Claude → Marketing |
+| D-9 (mié) | Reunión de planeación: brief de las 6 secciones | Marketing + Cumplimiento + Producto |
+| D-8 a D-6 | Ventana de insumos por formulario (cierre lunes 12:00) | Cumplimiento, CX, Producto, Comercial, Alianzas |
+| D-6 (lun) | Borrador completo | Marketing |
+| D-5 / D-4 | Validación y **texto congelado** | Cumplimiento, Producto, Comercial |
 | D-3 / D-2 | Montaje en HubSpot, pruebas y go / no-go | Marketing |
 | **D-0 (mar)** | **Envío a toda la base, 9:00** | Marketing |
 | D+3 (vie) | Revisión de métricas | Marketing |
 
-## Calendario de las primeras ediciones
+## Calendario hasta el 1 de marzo
 
-| Edición | Envío | Tema central (02 · En la práctica) | Cierre sugerido |
-|---|---|---|---|
-| N.º 01 | Mar 3 nov *(por confirmar)* | Lo que cambia el 30 de noviembre | Demo |
-| N.º 02 | Mar 17 nov | Beneficiario controlador con el umbral del 25 % | Webinar |
-| N.º 03 | Mar 1 dic | Avisos e informes en ceros | Blog / recurso |
-| N.º 04 | Mar 15 dic | Cierre de año: checklist y plan de capacitación anual | Demo |
-| N.º 05 | Mar 12 ene | Enfoque basado en riesgos | Webinar |
+| Envío | Tema central (02 · En la práctica) | Cierre sugerido |
+|---|---|---|
+| Mar 1 dic | Ya están vigentes las nuevas Reglas: notificaciones diarias y avisos en 24 horas | Demo |
+| Mar 15 dic | Cierre de año: checklist y plan de capacitación anual | Contenido |
+| Mar 12 ene | Beneficiario controlador con el umbral del 25 % | Webinar |
+| Mar 26 ene | Enfoque basado en riesgos | Demo |
+| Mar 9 feb | Manual de políticas internas y conocimiento del cliente | Contenido |
+| Mar 23 feb | Checklist final antes del 1 de marzo | Demo |
 
-Calendario completo hasta el 1 de marzo de 2027, criterios de selección y brief de edición: **[cómo se define el contenido](docs/definicion-de-contenido.md)**.
+Criterios de selección, banco de contenidos y brief de edición: **[cómo se define el contenido](docs/definicion-de-contenido.md)**.
 
 *No todas las ediciones necesitan vender directamente:* alternar el cierre entre demo, webinar y contenido.
 
